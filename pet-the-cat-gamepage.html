@@ -1,0 +1,58 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="pet-the-cat-game-style.css""> 
+</head>
+<body>
+    <div class="aboutGame">
+        <main>
+            <h1> Pet the Cat!</h1>
+        </main>
+
+        <div class="gamePlay">
+            <div class="tile">
+                <img class="animated-gif" id="catForPetting" src="https://i.giphy.com/media/80GCHGxnIVTvjX8yQN/source.gif">
+            </div>
+            
+            <div class="gameInfo">
+                <p class="petCountInfoBox" id="petCount">Current Pet Count:</p>
+                <p class="petCountNumber"> </p>
+                <div id="bankButton"> 
+                    <button class="bankButton" id="bankButton">BANK</button>
+                </div>
+                <p class="highestScore"> High Score: </p>
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+        <section class="info">
+            <div id="howToPlay"> 
+                <h2> How To Play</h2>
+                <p><b>Pet the Cat:</b> Click on the cat to pet it. Each click counts as one pet. <br>
+                <b>Random Tolerance:</b> This is the maximum number of times, 1-9, you can pet the cat before it gets angry. <br>
+                <b>Bank Your Pets:</b> After a few pets, you can click the 'Bank' button to save your score. Banking secures the points you've earned so far. <br>
+                <b>Take Risks Wisely:</b> You can continue petting the cat after banking, but be careful! If you exceed the cat's tolerance, the game ends.
+                </p>
+            </div>
+        </section>
+       
+    </div>
+
+    <div id="loseModal">
+        <div style="background-color:white; padding:20px; border-radius:5px;">
+            <h2>You angered the cat!</h2>
+            <img id="angryCat"  src="https://gifdb.com/images/high/angry-cat-triggered-hissing-camera-shake-g5bsu5e8eb5sjite.gif">
+            <br>
+            <button id="tryAgain" onclick="closeModal()">Try Again?</button>
+        </div>
+
+    <script src="pet-the-cat.js"></script>
+    
+</body>
+</html>
